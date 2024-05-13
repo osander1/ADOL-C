@@ -768,7 +768,7 @@ int removeTape(short tapeID, short type) {
 
 /****************************************************************************/
 /* Initialization for the taping process. Creates buffers for this tape,    */
-/* sets files names, and calls appropriate setup routines.                  */
+/* sets file names, and calls appropriate setup routines.                   */
 /****************************************************************************/
 int trace_on(short tnum, int keepTaylors) {
   int retval = 0;
