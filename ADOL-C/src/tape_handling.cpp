@@ -1066,14 +1066,14 @@ void TapeInfos::copy(const TapeInfos &tInfos) {
   pTapeInfos = tInfos.pTapeInfos;
 }
 
-PersistantTapeInfos::PersistantTapeInfos() {
+PersistentTapeInfos::PersistentTapeInfos() {
   char *ptr = (char *)(&forodec_nax), *end = (char *)(&paramstore);
   for (; ptr != end; ptr++)
     *ptr = 0;
   paramstore = NULL;
 }
 
-PersistantTapeInfos::~PersistantTapeInfos() {
+PersistentTapeInfos::~PersistentTapeInfos() {
   if (jacSolv_nax) {
     free(jacSolv_ci);
     free(jacSolv_ri);
